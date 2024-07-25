@@ -30,8 +30,8 @@ body {
   color: #fff;
   cursor: default;
   font-weight: 601;
-  /* animation: slidRight 1s ease forwards; */
-  /* opacity: 1; */
+  animation: Right 1s ease forwards;
+  opacity: 1;
 }
 
 .navbar a {
@@ -40,7 +40,7 @@ body {
   text-decoration: none;
   color: #fff;
   margin-left: 35px;
-  animation: slidTop 0.5s ease forwards;
+  animation: Top 0.5s ease forwards;
   font-weight: 501;
   animation-delay: calc(0.2s * var(--f));
   transition: 0.3s;
@@ -70,13 +70,13 @@ body {
 .home-content h3 {
   font-weight: 700;
   font-size: 32px;
-  animation: slidBottom 1s ease forwards;
+  animation: Bottom 1s ease forwards;
   animation-delay: 0.7s;
   opacity: 0;
 }
 
 .home-content h3:nth-of-type(2) {
-  animation: slidTop 1s ease forwards;
+  animation: Top 1s ease forwards;
   animation-delay: 0.8s;
   margin-bottom: 31px;
 }
@@ -90,14 +90,14 @@ body {
   opacity: 0;
   margin: -4px 0;
   animation-delay: 1s;
-  animation: slidRight 1s ease forwards;
+  animation: Right 1s ease forwards;
 }
 
 .home-content p {
   opacity: 0;
   font-size: 20px;
   animation-delay: 1s;
-  animation: slidLeft 1s ease forwards;
+  animation: Left 1s ease forwards;
 }
 
 .home-sci a {
@@ -135,7 +135,7 @@ body {
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: 600;
-  animation: slidTop 1s ease forwards;
+  animation: Top 1s ease forwards;
   opacity: 0;
   box-shadow: 0 0 5px #0eb, 0 0 25px #0eb;
   animation-delay: 2s;
@@ -253,7 +253,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
-  animation: slidTop 1s ease forwards;
+  animation: Top 1s ease forwards;
   animation-delay: 2s;
   box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
@@ -286,6 +286,7 @@ body {
 .portfolio-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+  justify-content: center;
 }
 
 .row {
@@ -349,7 +350,7 @@ body {
   height: 100%;
 }
 
-@keyframes slidRight {
+@keyframes Right {
   0% {
     transform: translateX(-100px);
     opacity: 0;
@@ -359,7 +360,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes slidLeft {
+@keyframes Left {
   0% {
     transform: translateX(100px);
     opacity: 0;
@@ -369,7 +370,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes slidTop {
+@keyframes Top {
   0% {
     transform: translateY(101px);
     opacity: 0;
@@ -380,7 +381,7 @@ body {
   }
 }
 
-@keyframes slidBottom {
+@keyframes Bottom {
   0% {
     transform: translateY(100px);
     opacity: 0;
