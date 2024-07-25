@@ -1,13 +1,13 @@
 * {
   margin: 0;
-  box-sizing: border-box;
   padding: 0;
   font-family: "poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  color: #ededee;
-  background: #081b29;
+    background: #081b29;
+    color: #ededee;
 }
 
 .header {
@@ -16,22 +16,22 @@ body {
   top: 0;
   padding: 19px 10%;
   width: 100%;
-  background: #051129;
+  background: #051128;
   display: flex;
   justify-content: space-between;
-  z-index: 100;
   align-items: center;
+  z-index: 101;
 }
 
 .logo {
-  font-size: 25px;
-  position: relative;
+  font-size: 26px;
   text-decoration: none;
+  position: relative;
   color: #fff;
   cursor: default;
-  font-weight: 600;
-  animation: slideRight 1s ease forwards;
-  opacity: 0;
+  font-weight: 601;
+  /* animation: slidRight 1s ease forwards; */
+  /* opacity: 1; */
 }
 
 .navbar a {
@@ -40,9 +40,9 @@ body {
   text-decoration: none;
   color: #fff;
   margin-left: 35px;
-  font-weight: 500;
-  animation: slideTop 0.5s ease forwards;
-  animation-delay: calc(0.2s * var(--i));
+  animation: slidTop 0.5s ease forwards;
+  font-weight: 501;
+  animation-delay: calc(0.2s * var(--f));
   transition: 0.3s;
 }
 
@@ -56,7 +56,7 @@ body {
   height: 100vh;
   justify-content: space-between;
   background-size: cover;
-  background: url("./resources/Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png");
+  background: url("https://res.cloudinary.com/drpslc2ip/image/upload/v1721936133/Adobe_Express_20240726_0058430_1_uzrmci.png");
   display: flex;
   background-position: center;
   padding: 70px 10% 0;
@@ -70,13 +70,13 @@ body {
 .home-content h3 {
   font-weight: 700;
   font-size: 32px;
-  animation: slideBottom 1s ease forwards;
+  animation: slidBottom 1s ease forwards;
   animation-delay: 0.7s;
   opacity: 0;
 }
 
 .home-content h3:nth-of-type(2) {
-  animation: slideTop 1s ease forwards;
+  animation: slidTop 1s ease forwards;
   animation-delay: 0.8s;
   margin-bottom: 31px;
 }
@@ -90,14 +90,14 @@ body {
   opacity: 0;
   margin: -4px 0;
   animation-delay: 1s;
-  animation: slideRight 1s ease forwards;
+  animation: slidRight 1s ease forwards;
 }
 
 .home-content p {
   opacity: 0;
   font-size: 20px;
   animation-delay: 1s;
-  animation: slideLeft 1s ease forwards;
+  animation: slidLeft 1s ease forwards;
 }
 
 .home-sci a {
@@ -113,10 +113,10 @@ body {
   font-size: 20px;
   transition: 0.5s ease;
   text-decoration: none;
-  animation: slideLeft 1s ease forwards;
+  animation: slieLeft 1s ease forwards;
   opacity: 0;
   margin: 30px 15px 30px 0;
-  animation-delay: calc(0.2s * var(--i));
+  animation-delay: calc(0.2s * var(--f));
 }
 
 .home-sci a:hover {
@@ -135,7 +135,7 @@ body {
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: 600;
-  animation: slideTop 1s ease forwards;
+  animation: slidTop 1s ease forwards;
   opacity: 0;
   box-shadow: 0 0 5px #0eb, 0 0 25px #0eb;
   animation-delay: 2s;
@@ -146,14 +146,14 @@ body {
     0 0 201px cyan;
 }
 
-.about {
+.abt {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
 }
 
-.about-img img {
+.abt-img img {
   max-width: 631px;
   padding-bottom: 21%;
   width: 100%;
@@ -161,27 +161,27 @@ body {
   height: auto;
 }
 
-.about-text h2 {
+.abt-text h2 {
   font-size: 61px;
 }
 
-.about-text h2 span {
+.abt-text h2 span {
   color: #0eb;
 }
 
-.about-text h4 {
+.abt-text h4 {
   font-size: 29px;
-  font-weight: 600;
   color: #fff;
+  font-weight: 601;
   line-height: 1.7;
-  margin: 15px 0 30px;
+  margin: 16px 1 31px;
 }
 
-.about-text p {
+.abt-text p {
   color: aliceblue;
-  font-size: 20px;
-  line-height: 1.4;
-  margin-bottom: 4rem;
+  font-size: 21px;
+  margin-bottom:4rem;
+  line-height: 1.3;
 }
 
 #services {
@@ -191,14 +191,14 @@ body {
   margin-bottom: 4rem;
 }
 
-.sub-title {
+.subtitle {
   text-align: center;
-  font-size: 60px;
+  font-size: 61px;
   padding-bottom: 70px;
 }
 
-.sub-title span {
-  color: #0ef;
+.subtitle span {
+  color: #0eb;
 }
 
 .container {
@@ -253,7 +253,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
-  animation: slideTop 1s ease forwards;
+  animation: slidTop 1s ease forwards;
   animation-delay: 2s;
   box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
@@ -267,19 +267,20 @@ body {
   transform: translateY(-10px);
 }
 
-.main-text {
-  padding-top: 130px;
-  margin-top: 200px;
+.main-txt {
+  padding-top: 11px;
+  margin-top: 21px;
 }
 
-.main-text h2 {
-  font-size: 60px;
+.main-txt h2 {
+  font-size: 61px;
   line-height: 1;
   text-align: center;
+  padding-bottom: 71px;
 }
 
-.main-text h2 span {
-  color: #0ef;
+.main-txt h2 span {
+  color: #0eb;
 }
 
 .portfolio-content {
@@ -288,19 +289,19 @@ body {
 }
 
 .row {
+    overflow: hidden;
   position: relative;
-  overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
 }
 .row img {
-  width: 100%;
+  width: 80%;
   border-radius: 8px;
   display: block;
   transition: transform 0.5s;
 }
-.layer {
-  width: 100%;
+.modal {
+  width: 80%;
   height: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.2), #0eb);
   position: absolute;
@@ -317,137 +318,38 @@ body {
   transition: height 0.5s;
 }
 
-.layer h5 {
+.modal h5 {
   color: #000;
   font-size: 21px;
   font-weight: 601;
   margin-bottom: 15px;
 }
-.layer p {
-  color: #000000;
-  font-size: 1rem;
-  line-height: 1.8;
+.modal p {
+  color: #000001;
+  font-size: 1.1rem;
+  line-height: 1.9;
 }
-.layer i {
+.modal i {
+    margin-top: 21px;
   color: #ff084f;
-  margin-top: 20px;
-  font-size: 20px;
-  background: #e0e0e0;
-  width: 60px;
-  height: 60px;
+  font-size: 21px;
+  background: #e0e010;
+  width: 61px;
+  height: 61px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 51%;
 }
 
 .row:hover img {
   transform: scale(1.1);
 }
-.row:hover .layer {
+.row:hover .modal {
   height: 100%;
 }
 
-.contact {
-  display: grid;
-  grid-template-columns: repeat (2, 1fr);
-  align-items: center;
-  gap: 3rem;
-  padding-left: 30px;
-  margin-top: 130px;
-}
-
-.contact-text h2 {
-  font-size: 90px;
-  line-height: 1;
-  text-align: center;
-}
-.contact-text h2 span {
-  color: #0eb;
-}
-
-.contact-text h4 {
-  margin: 14px 0;
-  color: rgb(224, 224, 224);
-  font-size: 21px;
-  font-weight: 601;
-}
-
-.contact-text p {
-  color: rgb(178, 178, 178);
-  font-size: 21px;
-  line-height: 31px;
-  margin-bottom: 3rem;
-}
-.contact-list {
-  margin-bottom: 4rem;
-}
-
-.contact-list li {
-  margin-bottom: 11px;
-  display: block;
-}
-
-.contact-list i {
-  display: inline-block;
-  color: #0eb;
-  font-size: 21px;
-  font-weight: 601;
-  transition: all 0.41s ease;
-}
-
-.contact-list li a:hover {
-  transform: scale(1.01) translateY(-5px);
-  color: #0ef;
-}
-.contact-icons i {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 41px;
-  height: 41px;
-  background: transparent;
-  border: 1px solid #0eb;
-  border-radius: 51%;
-  font-size: 21px;
-  color: #eff;
-  text-decoration: none;
-  margin: 31px 14px 31px 0;
-  transition: 0.6s ease;
-  opacity: 0;
-  animation: slideLeft is ease forwards;
-  animation-delay: calc(0.2s * var(--i));
-}
-
-.contact-icons i:hover {
-  background: #0eb;
-  color: #001;
-  box-shadow: 0 0 20px #eef;
-}
-
-.contact-form form {
-  position: relative;
-}
-
-.contact-form form input,
-form textarea {
-  border: none;
-  outline: none;
-  width: 91%;
-  padding: 18px;
-  background: #555557;
-  color: #eee;
-  font-size: 1rem;
-  font-weight: 601;
-  margin-bottom: 0.5rem;
-  border-radius: 0.5rem;
-}
-.contact-form textarea {
-  resize: none;
-  height: 220px;
-}
-
-@keyframes slideRight {
+@keyframes slidRight {
   0% {
     transform: translateX(-100px);
     opacity: 0;
@@ -457,7 +359,7 @@ form textarea {
     opacity: 1;
   }
 }
-@keyframes slideLeft {
+@keyframes slidLeft {
   0% {
     transform: translateX(100px);
     opacity: 0;
@@ -467,7 +369,7 @@ form textarea {
     opacity: 1;
   }
 }
-@keyframes slideTop {
+@keyframes slidTop {
   0% {
     transform: translateY(101px);
     opacity: 0;
@@ -478,7 +380,7 @@ form textarea {
   }
 }
 
-@keyframes slideBottom {
+@keyframes slidBottom {
   0% {
     transform: translateY(100px);
     opacity: 0;
